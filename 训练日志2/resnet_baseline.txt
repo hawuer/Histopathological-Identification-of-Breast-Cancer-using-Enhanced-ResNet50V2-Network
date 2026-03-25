@@ -1,0 +1,116 @@
+(med_vision) PS E:\Workspace\Medical Image Classification Model Based on SE-ResNet50V2 Attention Mechanism> python tools/run_resnet.py
+✅ 本地 GPU 显存按需增长已开启
+⏳ 正在创建 PCam 数据流...
+2026-03-19 17:01:26.683915: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Lib
+rary (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX AVX2                                                       To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2026-03-19 17:01:27.235622: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1532] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 95
+97 MB memory:  -> device: 0, name: NVIDIA GeForce RTX 3060, pci bus id: 0000:01:00.0, compute capability: 8.6                                           🚀 初始化 ResNet50 Baseline...
+🔥 Baseline 实验启动 (低性能配置)
+Epoch 1/20
+2026-03-19 17:01:32.456506: I tensorflow/stream_executor/cuda/cuda_dnn.cc:384] Loaded cuDNN version 8100
+2026-03-19 17:01:33.848222: E tensorflow/core/platform/windows/subprocess.cc:287] Call to CreateProcess failed. Error code: 2, command: '"ptxas.exe" "--
+version"'                                                                                                                                               2026-03-19 17:01:33.848938: E tensorflow/core/platform/windows/subprocess.cc:287] Call to CreateProcess failed. Error code: 2, command: '"ptxas.exe" "--
+version"'                                                                                                                                               2026-03-19 17:01:33.848999: W tensorflow/stream_executor/gpu/asm_compiler.cc:80] Couldn't get ptxas version string: INTERNAL: Couldn't invoke ptxas.exe 
+--version                                                                                                                                               2026-03-19 17:01:33.851106: E tensorflow/core/platform/windows/subprocess.cc:287] Call to CreateProcess failed. Error code: 2, command: '"ptxas.exe" "C:
+\Users\Admin\AppData\Local\Temp\/tempfile-DESKTOP-T7A9ARN-2c04-17300-64d5cd0b0e9de" "-o" "C:\Users\Admin\AppData\Local\Temp\/tempfile-DESKTOP-T7A9ARN-2c04-17300-64d5cd0b0f0c5" "-arch=sm_86" "--warn-on-spills"'                                                                                               2026-03-19 17:01:33.851310: W tensorflow/stream_executor/gpu/redzone_allocator.cc:314] INTERNAL: Failed to launch ptxas
+Relying on driver to perform ptx compilation.
+Modify $PATH to customize ptxas location.
+This message will be only logged once.
+2026-03-19 17:01:35.982681: I tensorflow/stream_executor/cuda/cuda_blas.cc:1786] TensorFloat-32 will be used for the matrix multiplication. This will on
+ly be logged once.                                                                                                                                      4096/4096 [==============================] - ETA: 0s - loss: 0.6895 - acc: 0.5246     
+Epoch 1: val_acc improved from -inf to 0.57837, saving model to E:\Workspace\Medical Image Classification Model Based on SE-ResNet50V2 Attention Mechani
+sm\checkpoints\resnet50_baseline_low_perf\best_baseline.h5                                                                                              4096/4096 [==============================] - 109s 25ms/step - loss: 0.6895 - acc: 0.5246 - val_loss: 0.6772 - val_acc: 0.5784
+Epoch 2/20
+4094/4096 [============================>.] - ETA: 0s - loss: 0.6467 - acc: 0.6333  
+Epoch 2: val_acc improved from 0.57837 to 0.67896, saving model to E:\Workspace\Medical Image Classification Model Based on SE-ResNet50V2 Attention Mech
+anism\checkpoints\resnet50_baseline_low_perf\best_baseline.h5                                                                                           4096/4096 [==============================] - 102s 25ms/step - loss: 0.6467 - acc: 0.6333 - val_loss: 0.6068 - val_acc: 0.6790
+Epoch 3/20
+4094/4096 [============================>.] - ETA: 0s - loss: 0.6187 - acc: 0.6544  
+Epoch 3: val_acc improved from 0.67896 to 0.69910, saving model to E:\Workspace\Medical Image Classification Model Based on SE-ResNet50V2 Attention Mech
+anism\checkpoints\resnet50_baseline_low_perf\best_baseline.h5                                                                                           4096/4096 [==============================] - 102s 25ms/step - loss: 0.6186 - acc: 0.6544 - val_loss: 0.5850 - val_acc: 0.6991
+Epoch 4/20
+4096/4096 [==============================] - ETA: 0s - loss: 0.6116 - acc: 0.6594  
+Epoch 4: val_acc did not improve from 0.69910
+4096/4096 [==============================] - 101s 25ms/step - loss: 0.6116 - acc: 0.6594 - val_loss: 0.5975 - val_acc: 0.6941
+Epoch 5/20
+4095/4096 [============================>.] - ETA: 0s - loss: 0.6039 - acc: 0.6662  
+Epoch 5: val_acc improved from 0.69910 to 0.70062, saving model to E:\Workspace\Medical Image Classification Model Based on SE-ResNet50V2 Attention Mech
+anism\checkpoints\resnet50_baseline_low_perf\best_baseline.h5                                                                                           4096/4096 [==============================] - 101s 25ms/step - loss: 0.6038 - acc: 0.6662 - val_loss: 0.5779 - val_acc: 0.7006
+Epoch 6/20
+4096/4096 [==============================] - ETA: 0s - loss: 0.6013 - acc: 0.6691  
+Epoch 6: val_acc did not improve from 0.70062
+4096/4096 [==============================] - 100s 24ms/step - loss: 0.6013 - acc: 0.6691 - val_loss: 0.5836 - val_acc: 0.6916
+Epoch 7/20
+4094/4096 [============================>.] - ETA: 0s - loss: 0.5955 - acc: 0.6753  
+Epoch 7: val_acc improved from 0.70062 to 0.71188, saving model to E:\Workspace\Medical Image Classification Model Based on SE-ResNet50V2 Attention Mech
+anism\checkpoints\resnet50_baseline_low_perf\best_baseline.h5                                                                                           4096/4096 [==============================] - 102s 25ms/step - loss: 0.5955 - acc: 0.6753 - val_loss: 0.5634 - val_acc: 0.7119
+Epoch 8/20
+4095/4096 [============================>.] - ETA: 0s - loss: 0.5953 - acc: 0.6763  
+Epoch 8: val_acc did not improve from 0.71188
+4096/4096 [==============================] - 101s 25ms/step - loss: 0.5953 - acc: 0.6763 - val_loss: 0.5784 - val_acc: 0.6955
+Epoch 9/20
+4095/4096 [============================>.] - ETA: 0s - loss: 0.5910 - acc: 0.6834  
+Epoch 9: val_acc improved from 0.71188 to 0.71198, saving model to E:\Workspace\Medical Image Classification Model Based on SE-ResNet50V2 Attention Mech
+anism\checkpoints\resnet50_baseline_low_perf\best_baseline.h5                                                                                           4096/4096 [==============================] - 101s 25ms/step - loss: 0.5909 - acc: 0.6834 - val_loss: 0.5595 - val_acc: 0.7120
+Epoch 10/20
+4094/4096 [============================>.] - ETA: 0s - loss: 0.5882 - acc: 0.6893  
+Epoch 10: val_acc did not improve from 0.71198
+4096/4096 [==============================] - 100s 24ms/step - loss: 0.5882 - acc: 0.6893 - val_loss: 0.5622 - val_acc: 0.7091
+Epoch 11/20
+4095/4096 [============================>.] - ETA: 0s - loss: 0.5835 - acc: 0.6931  
+Epoch 11: val_acc improved from 0.71198 to 0.71414, saving model to E:\Workspace\Medical Image Classification Model Based on SE-ResNet50V2 Attention Mec
+hanism\checkpoints\resnet50_baseline_low_perf\best_baseline.h5                                                                                          4096/4096 [==============================] - 100s 24ms/step - loss: 0.5835 - acc: 0.6932 - val_loss: 0.5581 - val_acc: 0.7141
+Epoch 12/20
+4096/4096 [==============================] - ETA: 0s - loss: 0.5837 - acc: 0.6920  
+Epoch 12: val_acc did not improve from 0.71414
+4096/4096 [==============================] - 100s 24ms/step - loss: 0.5837 - acc: 0.6920 - val_loss: 0.5691 - val_acc: 0.7080
+Epoch 13/20
+4094/4096 [============================>.] - ETA: 0s - loss: 0.5802 - acc: 0.6966  
+Epoch 13: val_acc improved from 0.71414 to 0.71869, saving model to E:\Workspace\Medical Image Classification Model Based on SE-ResNet50V2 Attention Mec
+hanism\checkpoints\resnet50_baseline_low_perf\best_baseline.h5                                                                                          4096/4096 [==============================] - 100s 24ms/step - loss: 0.5802 - acc: 0.6966 - val_loss: 0.5501 - val_acc: 0.7187
+Epoch 14/20
+4095/4096 [============================>.] - ETA: 0s - loss: 0.5810 - acc: 0.6958  
+Epoch 14: val_acc did not improve from 0.71869
+4096/4096 [==============================] - 101s 25ms/step - loss: 0.5810 - acc: 0.6958 - val_loss: 0.5659 - val_acc: 0.7018
+Epoch 15/20
+4094/4096 [============================>.] - ETA: 0s - loss: 0.5784 - acc: 0.6985  
+Epoch 15: val_acc did not improve from 0.71869
+4096/4096 [==============================] - 101s 25ms/step - loss: 0.5784 - acc: 0.6985 - val_loss: 0.5549 - val_acc: 0.7146
+Epoch 16/20
+4096/4096 [==============================] - ETA: 0s - loss: 0.5787 - acc: 0.6961  
+Epoch 16: val_acc did not improve from 0.71869
+4096/4096 [==============================] - 100s 24ms/step - loss: 0.5787 - acc: 0.6961 - val_loss: 0.5638 - val_acc: 0.7030
+Epoch 17/20
+4096/4096 [==============================] - ETA: 0s - loss: 0.5750 - acc: 0.7012  
+Epoch 17: val_acc did not improve from 0.71869
+4096/4096 [==============================] - 100s 24ms/step - loss: 0.5750 - acc: 0.7012 - val_loss: 0.5497 - val_acc: 0.7153
+Epoch 18/20
+4095/4096 [============================>.] - ETA: 0s - loss: 0.5755 - acc: 0.6991  
+Epoch 18: val_acc did not improve from 0.71869
+4096/4096 [==============================] - 100s 24ms/step - loss: 0.5755 - acc: 0.6991 - val_loss: 0.5558 - val_acc: 0.7108
+Epoch 19/20
+4096/4096 [==============================] - ETA: 0s - loss: 0.5729 - acc: 0.7036  
+Epoch 19: val_acc improved from 0.71869 to 0.71948, saving model to E:\Workspace\Medical Image Classification Model Based on SE-ResNet50V2 Attention Mec
+hanism\checkpoints\resnet50_baseline_low_perf\best_baseline.h5                                                                                          4096/4096 [==============================] - 101s 25ms/step - loss: 0.5729 - acc: 0.7036 - val_loss: 0.5448 - val_acc: 0.7195
+Epoch 20/20
+4095/4096 [============================>.] - ETA: 0s - loss: 0.5738 - acc: 0.7021  
+Epoch 20: val_acc did not improve from 0.71948
+4096/4096 [==============================] - 101s 25ms/step - loss: 0.5738 - acc: 0.7021 - val_loss: 0.5562 - val_acc: 0.7089
+
+📊 正在生成 Baseline 评估报告...
+✅ 训练曲线已保存: F:\复现图像生成\resnet50_baseline_training_plot.png
+2026-03-19 17:35:13.379588: W tensorflow/core/framework/cpu_allocator_impl.cc:82] Allocation of 3623878656 exceeds 10% of free system memory.
+1024/1024 [==============================] - 19s 18ms/step
+
+📋 resnet50_baseline 测试集分类报告:
+               precision    recall  f1-score   support
+
+           0       0.71      0.74      0.73     16391
+           1       0.73      0.70      0.72     16377
+
+    accuracy                           0.72     32768
+   macro avg       0.72      0.72      0.72     32768
+weighted avg       0.72      0.72      0.72     32768
+
+✅ 混淆矩阵已保存: F:\复现图像生成\resnet50_baseline_confusion_matrix.png
+✅ Baseline 任务结束

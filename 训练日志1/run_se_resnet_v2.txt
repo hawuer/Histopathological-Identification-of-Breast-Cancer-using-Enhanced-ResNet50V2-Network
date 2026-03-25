@@ -1,0 +1,171 @@
+(med_vision) PS E:\Workspace\Medical Image Classification Model Based on SE-ResNet50V2 Attention Mechanism> python tools/run_se_resnet_v2.py
+✅ GPU 环境准备就绪
+⏳ 正在创建 PCam 数据流 (Batch Size: 32)...
+2026-03-08 04:11:17.492513: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Lib
+rary (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX AVX2                                                       To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2026-03-08 04:11:18.386203: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1532] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 95
+97 MB memory:  -> device: 0, name: NVIDIA GeForce RTX 3060, pci bus id: 0000:01:00.0, compute capability: 8.6                                           🚀 正在初始化最终改进版 SE-ResNet50V2 模型...
+🔥 开始执行最终版 SE-ResNet50V2 实验 (PCam)...
+Epoch 1/30
+2026-03-08 04:11:27.439377: I tensorflow/stream_executor/cuda/cuda_dnn.cc:384] Loaded cuDNN version 8100
+2026-03-08 04:11:28.971638: E tensorflow/core/platform/windows/subprocess.cc:287] Call to CreateProcess failed. Error code: 2, command: '"ptxas.exe" "--
+version"'                                                                                                                                               2026-03-08 04:11:28.972270: E tensorflow/core/platform/windows/subprocess.cc:287] Call to CreateProcess failed. Error code: 2, command: '"ptxas.exe" "--
+version"'                                                                                                                                               2026-03-08 04:11:28.972315: W tensorflow/stream_executor/gpu/asm_compiler.cc:80] Couldn't get ptxas version string: INTERNAL: Couldn't invoke ptxas.exe 
+--version                                                                                                                                               2026-03-08 04:11:28.974385: E tensorflow/core/platform/windows/subprocess.cc:287] Call to CreateProcess failed. Error code: 2, command: '"ptxas.exe" "C:
+\Users\Admin\AppData\Local\Temp\/tempfile-DESKTOP-T7A9ARN-2ac0-9400-64c74c669523c" "-o" "C:\Users\Admin\AppData\Local\Temp\/tempfile-DESKTOP-T7A9ARN-2ac0-9400-64c74c6695921" "-arch=sm_86" "--warn-on-spills"'                                                                                                 2026-03-08 04:11:28.974561: W tensorflow/stream_executor/gpu/redzone_allocator.cc:314] INTERNAL: Failed to launch ptxas
+Relying on driver to perform ptx compilation. 
+Modify $PATH to customize ptxas location.
+This message will be only logged once.
+2026-03-08 04:11:30.504403: I tensorflow/stream_executor/cuda/cuda_blas.cc:1786] TensorFloat-32 will be used for the matrix multiplication. This will on
+ly be logged once.                                                                                                                                      8192/8192 [==============================] - ETA: 0s - loss: 0.4828 - acc: 0.7619      
+Epoch 1: val_acc improved from -inf to 0.71991, saving model to E:\Workspace\Medical Image Classification Model Based on SE-ResNet50V2 Attention Mechani
+sm\checkpoints\se_resnet50v2_pcam_final\best_se_v2_pcam.h5                                                                                              8192/8192 [==============================] - 562s 67ms/step - loss: 0.4828 - acc: 0.7619 - val_loss: 0.5664 - val_acc: 0.7199 - lr: 0.0010
+Epoch 2/30
+8192/8192 [==============================] - ETA: 0s - loss: 0.2400 - acc: 0.9083  
+Epoch 2: val_acc improved from 0.71991 to 0.75351, saving model to E:\Workspace\Medical Image Classification Model Based on SE-ResNet50V2 Attention Mech
+anism\checkpoints\se_resnet50v2_pcam_final\best_se_v2_pcam.h5                                                                                           8192/8192 [==============================] - 554s 68ms/step - loss: 0.2400 - acc: 0.9083 - val_loss: 0.5027 - val_acc: 0.7535 - lr: 0.0010
+Epoch 3/30
+8192/8192 [==============================] - ETA: 0s - loss: 0.2005 - acc: 0.9247  
+Epoch 3: val_acc did not improve from 0.75351
+8192/8192 [==============================] - 553s 67ms/step - loss: 0.2005 - acc: 0.9247 - val_loss: 0.5010 - val_acc: 0.7392 - lr: 0.0010
+Epoch 4/30
+8192/8192 [==============================] - ETA: 0s - loss: 0.1750 - acc: 0.9345  
+Epoch 4: val_acc improved from 0.75351 to 0.78854, saving model to E:\Workspace\Medical Image Classification Model Based on SE-ResNet50V2 Attention Mech
+anism\checkpoints\se_resnet50v2_pcam_final\best_se_v2_pcam.h5                                                                                           8192/8192 [==============================] - 553s 68ms/step - loss: 0.1750 - acc: 0.9345 - val_loss: 0.4553 - val_acc: 0.7885 - lr: 0.0010
+Epoch 5/30
+8192/8192 [==============================] - ETA: 0s - loss: 0.1563 - acc: 0.9416  
+Epoch 5: val_acc improved from 0.78854 to 0.82538, saving model to E:\Workspace\Medical Image Classification Model Based on SE-ResNet50V2 Attention Mech
+anism\checkpoints\se_resnet50v2_pcam_final\best_se_v2_pcam.h5                                                                                           8192/8192 [==============================] - 553s 68ms/step - loss: 0.1563 - acc: 0.9416 - val_loss: 0.4039 - val_acc: 0.8254 - lr: 0.0010
+Epoch 6/30
+8192/8192 [==============================] - ETA: 0s - loss: 0.1399 - acc: 0.9477  
+Epoch 6: val_acc did not improve from 0.82538
+8192/8192 [==============================] - 553s 68ms/step - loss: 0.1399 - acc: 0.9477 - val_loss: 0.4581 - val_acc: 0.7969 - lr: 0.0010
+Epoch 7/30
+8192/8192 [==============================] - ETA: 0s - loss: 0.1253 - acc: 0.9535  
+Epoch 7: val_acc did not improve from 0.82538
+8192/8192 [==============================] - 553s 67ms/step - loss: 0.1253 - acc: 0.9535 - val_loss: 0.4736 - val_acc: 0.7746 - lr: 0.0010
+Epoch 8/30
+8192/8192 [==============================] - ETA: 0s - loss: 0.1139 - acc: 0.9575  
+Epoch 8: val_acc did not improve from 0.82538
+
+Epoch 8: ReduceLROnPlateau reducing learning rate to 0.0005000000237487257.
+8192/8192 [==============================] - 553s 68ms/step - loss: 0.1139 - acc: 0.9575 - val_loss: 0.5422 - val_acc: 0.7736 - lr: 0.0010
+Epoch 9/30
+8192/8192 [==============================] - ETA: 0s - loss: 0.0901 - acc: 0.9669  
+Epoch 9: val_acc did not improve from 0.82538
+8192/8192 [==============================] - 553s 68ms/step - loss: 0.0901 - acc: 0.9669 - val_loss: 0.4519 - val_acc: 0.8101 - lr: 5.0000e-04
+Epoch 10/30
+8192/8192 [==============================] - ETA: 0s - loss: 0.0801 - acc: 0.9705  
+Epoch 10: val_acc did not improve from 0.82538
+8192/8192 [==============================] - 553s 68ms/step - loss: 0.0801 - acc: 0.9705 - val_loss: 0.5978 - val_acc: 0.8020 - lr: 5.0000e-04
+Epoch 11/30
+8192/8192 [==============================] - ETA: 0s - loss: 0.0723 - acc: 0.9737  
+Epoch 11: val_acc did not improve from 0.82538
+
+Epoch 11: ReduceLROnPlateau reducing learning rate to 0.0002500000118743628.
+8192/8192 [==============================] - 553s 68ms/step - loss: 0.0723 - acc: 0.9737 - val_loss: 0.5093 - val_acc: 0.8139 - lr: 5.0000e-04
+Epoch 12/30
+8192/8192 [==============================] - ETA: 0s - loss: 0.0576 - acc: 0.9789  
+Epoch 12: val_acc improved from 0.82538 to 0.83005, saving model to E:\Workspace\Medical Image Classification Model Based on SE-ResNet50V2 Attention Mec
+hanism\checkpoints\se_resnet50v2_pcam_final\best_se_v2_pcam.h5                                                                                          8192/8192 [==============================] - 554s 68ms/step - loss: 0.0576 - acc: 0.9789 - val_loss: 0.5233 - val_acc: 0.8300 - lr: 2.5000e-04
+Epoch 13/30
+8192/8192 [==============================] - ETA: 0s - loss: 0.0502 - acc: 0.9820  
+Epoch 13: val_acc did not improve from 0.83005
+8192/8192 [==============================] - 553s 68ms/step - loss: 0.0502 - acc: 0.9820 - val_loss: 0.6507 - val_acc: 0.8050 - lr: 2.5000e-04
+Epoch 14/30
+8192/8192 [==============================] - ETA: 0s - loss: 0.0439 - acc: 0.9843  
+Epoch 14: val_acc did not improve from 0.83005
+
+Epoch 14: ReduceLROnPlateau reducing learning rate to 0.0001250000059371814.
+8192/8192 [==============================] - 553s 67ms/step - loss: 0.0439 - acc: 0.9843 - val_loss: 0.9224 - val_acc: 0.7685 - lr: 2.5000e-04
+Epoch 15/30
+8192/8192 [==============================] - ETA: 0s - loss: 0.0347 - acc: 0.9878  
+Epoch 15: val_acc did not improve from 0.83005
+8192/8192 [==============================] - 554s 68ms/step - loss: 0.0347 - acc: 0.9878 - val_loss: 0.9569 - val_acc: 0.7806 - lr: 1.2500e-04
+Epoch 16/30
+8192/8192 [==============================] - ETA: 0s - loss: 0.0289 - acc: 0.9901  
+Epoch 16: val_acc did not improve from 0.83005
+8192/8192 [==============================] - 553s 68ms/step - loss: 0.0289 - acc: 0.9901 - val_loss: 1.1645 - val_acc: 0.7541 - lr: 1.2500e-04
+Epoch 17/30
+8192/8192 [==============================] - ETA: 0s - loss: 0.0237 - acc: 0.9920  
+Epoch 17: val_acc did not improve from 0.83005
+
+Epoch 17: ReduceLROnPlateau reducing learning rate to 6.25000029685907e-05.
+8192/8192 [==============================] - 553s 68ms/step - loss: 0.0237 - acc: 0.9920 - val_loss: 1.6818 - val_acc: 0.7294 - lr: 1.2500e-04
+Epoch 18/30
+8192/8192 [==============================] - ETA: 0s - loss: 0.0192 - acc: 0.9936  
+Epoch 18: val_acc did not improve from 0.83005
+8192/8192 [==============================] - 553s 68ms/step - loss: 0.0192 - acc: 0.9936 - val_loss: 1.1643 - val_acc: 0.7796 - lr: 6.2500e-05
+Epoch 19/30
+8192/8192 [==============================] - ETA: 0s - loss: 0.0155 - acc: 0.9950  
+Epoch 19: val_acc did not improve from 0.83005
+8192/8192 [==============================] - 553s 68ms/step - loss: 0.0155 - acc: 0.9950 - val_loss: 1.3926 - val_acc: 0.7666 - lr: 6.2500e-05
+Epoch 20/30
+8192/8192 [==============================] - ETA: 0s - loss: 0.0127 - acc: 0.9960  
+Epoch 20: val_acc did not improve from 0.83005
+
+Epoch 20: ReduceLROnPlateau reducing learning rate to 3.125000148429535e-05.
+8192/8192 [==============================] - 553s 68ms/step - loss: 0.0127 - acc: 0.9960 - val_loss: 1.2790 - val_acc: 0.7918 - lr: 6.2500e-05
+Epoch 21/30
+8192/8192 [==============================] - ETA: 0s - loss: 0.0104 - acc: 0.9967  
+Epoch 21: val_acc did not improve from 0.83005
+8192/8192 [==============================] - 551s 67ms/step - loss: 0.0104 - acc: 0.9967 - val_loss: 1.1959 - val_acc: 0.8080 - lr: 3.1250e-05
+Epoch 22/30
+8192/8192 [==============================] - ETA: 0s - loss: 0.0087 - acc: 0.9974  
+Epoch 22: val_acc did not improve from 0.83005
+8192/8192 [==============================] - 553s 68ms/step - loss: 0.0087 - acc: 0.9974 - val_loss: 1.2942 - val_acc: 0.7990 - lr: 3.1250e-05
+Epoch 23/30
+8192/8192 [==============================] - ETA: 0s - loss: 0.0074 - acc: 0.9978  
+Epoch 23: val_acc did not improve from 0.83005
+
+Epoch 23: ReduceLROnPlateau reducing learning rate to 1.5625000742147677e-05.
+8192/8192 [==============================] - 553s 68ms/step - loss: 0.0074 - acc: 0.9978 - val_loss: 1.2841 - val_acc: 0.8070 - lr: 3.1250e-05
+Epoch 24/30
+8192/8192 [==============================] - ETA: 0s - loss: 0.0063 - acc: 0.9982  
+Epoch 24: val_acc did not improve from 0.83005
+8192/8192 [==============================] - 553s 67ms/step - loss: 0.0063 - acc: 0.9982 - val_loss: 1.2480 - val_acc: 0.8161 - lr: 1.5625e-05
+Epoch 25/30
+8192/8192 [==============================] - ETA: 0s - loss: 0.0053 - acc: 0.9985  
+Epoch 25: val_acc did not improve from 0.83005
+8192/8192 [==============================] - 553s 67ms/step - loss: 0.0053 - acc: 0.9985 - val_loss: 1.3204 - val_acc: 0.8116 - lr: 1.5625e-05
+Epoch 26/30
+8192/8192 [==============================] - ETA: 0s - loss: 0.0047 - acc: 0.9987  
+Epoch 26: val_acc did not improve from 0.83005
+
+Epoch 26: ReduceLROnPlateau reducing learning rate to 7.812500371073838e-06.
+8192/8192 [==============================] - 553s 68ms/step - loss: 0.0047 - acc: 0.9987 - val_loss: 1.3313 - val_acc: 0.8157 - lr: 1.5625e-05
+Epoch 27/30
+8192/8192 [==============================] - ETA: 0s - loss: 0.0044 - acc: 0.9988  
+Epoch 27: val_acc did not improve from 0.83005
+8192/8192 [==============================] - 553s 68ms/step - loss: 0.0044 - acc: 0.9988 - val_loss: 1.3390 - val_acc: 0.8126 - lr: 7.8125e-06
+Epoch 28/30
+8192/8192 [==============================] - ETA: 0s - loss: 0.0039 - acc: 0.9990  
+Epoch 28: val_acc did not improve from 0.83005
+8192/8192 [==============================] - 553s 68ms/step - loss: 0.0039 - acc: 0.9990 - val_loss: 1.4043 - val_acc: 0.8097 - lr: 7.8125e-06
+Epoch 29/30
+8192/8192 [==============================] - ETA: 0s - loss: 0.0036 - acc: 0.9991  
+Epoch 29: val_acc did not improve from 0.83005
+
+Epoch 29: ReduceLROnPlateau reducing learning rate to 3.906250185536919e-06.
+8192/8192 [==============================] - 553s 68ms/step - loss: 0.0036 - acc: 0.9991 - val_loss: 1.4226 - val_acc: 0.8108 - lr: 7.8125e-06
+Epoch 30/30
+8192/8192 [==============================] - ETA: 0s - loss: 0.0033 - acc: 0.9991      
+Epoch 30: val_acc did not improve from 0.83005
+8192/8192 [==============================] - 553s 68ms/step - loss: 0.0033 - acc: 0.9991 - val_loss: 1.4464 - val_acc: 0.8087 - lr: 3.9063e-06
+✅ 训练曲线已保存: F:\复现图像生成\se_resnet50_v2_pcam_training_plot.png
+2026-03-08 08:48:05.293510: W tensorflow/core/framework/cpu_allocator_impl.cc:82] Allocation of 3623878656 exceeds 10% of free system memory.
+1024/1024 [==============================] - 21s 19ms/step
+
+📋 se_resnet50_v2_pcam 测试集分类报告:
+               precision    recall  f1-score   support
+
+           0       0.68      0.93      0.78     16391
+           1       0.89      0.55      0.68     16377
+
+    accuracy                           0.74     32768
+   macro avg       0.78      0.74      0.73     32768
+weighted avg       0.78      0.74      0.73     32768
+
+✅ 混淆矩阵已保存: F:\复现图像生成\se_resnet50_v2_pcam_confusion_matrix.png
+✅ 最终实验完成！结果保存在: E:\Workspace\Medical Image Classification Model Based on SE-ResNet50V2 Attention Mechanism\checkpoints\se_resnet50v2_pcam_f
+inal                                                                                                                                                    

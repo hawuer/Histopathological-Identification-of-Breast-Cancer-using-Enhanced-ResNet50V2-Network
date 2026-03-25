@@ -1,0 +1,83 @@
+Epoch 17/30
+8192/8192 [==============================] - ETA: 0s - loss: 0.0040 - acc: 0.9987  
+Epoch 17: val_acc did not improve from 0.85626
+8192/8192 [==============================] - 458s 56ms/step - loss: 0.0040 - acc: 0.9987 - val_loss: 1.5821 - val_acc: 0.8291 - lr: 6.2500e-05
+Epoch 18/30
+8192/8192 [==============================] - ETA: 0s - loss: 0.0026 - acc: 0.9992      
+Epoch 18: val_acc did not improve from 0.85626
+8192/8192 [==============================] - 459s 56ms/step - loss: 0.0026 - acc: 0.9992 - val_loss: 1.8660 - val_acc: 0.8376 - lr: 6.2500e-05
+Epoch 19/30
+8192/8192 [==============================] - ETA: 0s - loss: 0.0019 - acc: 0.9994      
+Epoch 19: val_acc did not improve from 0.85626
+
+Epoch 19: ReduceLROnPlateau reducing learning rate to 3.125000148429535e-05.
+8192/8192 [==============================] - 458s 56ms/step - loss: 0.0019 - acc: 0.9994 - val_loss: 2.1206 - val_acc: 0.8367 - lr: 6.2500e-05
+Epoch 20/30
+8192/8192 [==============================] - ETA: 0s - loss: 0.0015 - acc: 0.9996      
+Epoch 20: val_acc did not improve from 0.85626
+8192/8192 [==============================] - 458s 56ms/step - loss: 0.0015 - acc: 0.9996 - val_loss: 2.3324 - val_acc: 0.8243 - lr: 3.1250e-05
+Epoch 21/30
+8192/8192 [==============================] - ETA: 0s - loss: 9.1865e-04 - acc: 0.9997  
+Epoch 21: val_acc did not improve from 0.85626
+8192/8192 [==============================] - 458s 56ms/step - loss: 9.1865e-04 - acc: 0.9997 - val_loss: 2.3343 - val_acc: 0.8322 - lr: 3.1250e-05      
+Epoch 22/30
+8192/8192 [==============================] - ETA: 0s - loss: 8.2460e-04 - acc: 0.9997  
+Epoch 22: val_acc did not improve from 0.85626
+
+Epoch 22: ReduceLROnPlateau reducing learning rate to 1.5625000742147677e-05.
+8192/8192 [==============================] - 458s 56ms/step - loss: 8.2460e-04 - acc: 0.9997 - val_loss: 2.9512 - val_acc: 0.8069 - lr: 3.1250e-05      
+Epoch 23/30
+8192/8192 [==============================] - ETA: 0s - loss: 5.9141e-04 - acc: 0.9998  
+Epoch 23: val_acc did not improve from 0.85626
+8192/8192 [==============================] - 458s 56ms/step - loss: 5.9141e-04 - acc: 0.9998 - val_loss: 2.6289 - val_acc: 0.8225 - lr: 1.5625e-05      
+Epoch 24/30
+8192/8192 [==============================] - ETA: 0s - loss: 4.7946e-04 - acc: 0.9999  
+Epoch 24: val_acc did not improve from 0.85626
+8192/8192 [==============================] - 458s 56ms/step - loss: 4.7946e-04 - acc: 0.9999 - val_loss: 2.6298 - val_acc: 0.8271 - lr: 1.5625e-05      
+Epoch 25/30
+8192/8192 [==============================] - ETA: 0s - loss: 3.7319e-04 - acc: 0.9999  
+Epoch 25: val_acc did not improve from 0.85626
+
+Epoch 25: ReduceLROnPlateau reducing learning rate to 7.812500371073838e-06.
+8192/8192 [==============================] - 456s 56ms/step - loss: 3.7319e-04 - acc: 0.9999 - val_loss: 2.7953 - val_acc: 0.8269 - lr: 1.5625e-05      
+Epoch 26/30
+8192/8192 [==============================] - ETA: 0s - loss: 2.9083e-04 - acc: 0.9999  
+Epoch 26: val_acc did not improve from 0.85626
+8192/8192 [==============================] - 458s 56ms/step - loss: 2.9083e-04 - acc: 0.9999 - val_loss: 2.8281 - val_acc: 0.8291 - lr: 7.8125e-06      
+Epoch 27/30
+8192/8192 [==============================] - ETA: 0s - loss: 2.5532e-04 - acc: 0.9999  
+Epoch 27: val_acc did not improve from 0.85626
+8192/8192 [==============================] - 458s 56ms/step - loss: 2.5532e-04 - acc: 0.9999 - val_loss: 2.9123 - val_acc: 0.8279 - lr: 7.8125e-06      
+Epoch 28/30
+8192/8192 [==============================] - ETA: 0s - loss: 1.9687e-04 - acc: 0.9999  
+Epoch 28: val_acc did not improve from 0.85626
+
+Epoch 28: ReduceLROnPlateau reducing learning rate to 3.906250185536919e-06.
+8192/8192 [==============================] - 458s 56ms/step - loss: 1.9687e-04 - acc: 0.9999 - val_loss: 3.0461 - val_acc: 0.8275 - lr: 7.8125e-06      
+Epoch 29/30
+8192/8192 [==============================] - ETA: 0s - loss: 1.7882e-04 - acc: 1.0000  
+Epoch 29: val_acc did not improve from 0.85626
+8192/8192 [==============================] - 457s 56ms/step - loss: 1.7882e-04 - acc: 1.0000 - val_loss: 3.0676 - val_acc: 0.8284 - lr: 3.9063e-06      
+Epoch 30/30
+8192/8192 [==============================] - ETA: 0s - loss: 1.6361e-04 - acc: 0.9999  
+Epoch 30: val_acc did not improve from 0.85626
+8192/8192 [==============================] - 458s 56ms/step - loss: 1.6361e-04 - acc: 0.9999 - val_loss: 3.0888 - val_acc: 0.8293 - lr: 3.9063e-06      
+
+📊 正在生成评估报告与混淆矩阵...
+✅ 训练曲线已保存: F:\复现图像生成\resnet50_pcam_baseline_training_plot.png
+2026-03-08 14:04:15.821830: W tensorflow/core/framework/cpu_allocator_impl.cc:82] Allocation of 3623878656 exceeds 10% of free system memory.
+1024/1024 [==============================] - 18s 17ms/step
+
+📋 resnet50_pcam_baseline 测试集分类报告:
+               precision    recall  f1-score   support
+
+           0       0.70      0.96      0.81     16391
+           1       0.94      0.60      0.73     16377
+
+    accuracy                           0.78     32768
+   macro avg       0.82      0.78      0.77     32768
+weighted avg       0.82      0.78      0.77     32768
+
+✅ 混淆矩阵已保存: F:\复现图像生成\resnet50_pcam_baseline_confusion_matrix.png
+✅ Baseline 任务完成！结果已保存在 E:\Workspace\Medical Image Classification Model Based on SE-ResNet50V2 Attention Mechanism\checkpoints\resnet50_pcam_streaming_v2
+(med_vision) PS E:\Workspace\Medical Image Classification Model Based on SE-ResNet50V2 Attention Mechanism> 

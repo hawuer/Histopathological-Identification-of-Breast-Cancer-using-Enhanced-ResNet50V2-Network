@@ -1,0 +1,38 @@
+(med_vision) PS E:\Workspace\Medical Image Classification Model Based on SE-ResNet50V2 Attention Mechanism> python tools/se_resnet_v2_epoch8.py
+✅ 项目根目录已识别: E:\Workspace\Medical Image Classification Model Based on SE-ResNet50V2 Attention Mechanism
+⏳ 正在加载最佳模型 (Epoch 8)...
+2026-03-22 12:07:10.183170: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Lib
+rary (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX AVX2                                                       To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2026-03-22 12:07:11.003062: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1532] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 95
+97 MB memory:  -> device: 0, name: NVIDIA GeForce RTX 3060, pci bus id: 0000:01:00.0, compute capability: 8.6                                           WARNING:tensorflow:Using a while_loop for converting RngReadAndSkip
+WARNING:tensorflow:Using a while_loop for converting Bitcast
+WARNING:tensorflow:Using a while_loop for converting Bitcast
+WARNING:tensorflow:Using a while_loop for converting StatelessRandomUniformFullIntV2
+WARNING:tensorflow:Using a while_loop for converting StatelessRandomGetKeyCounter
+WARNING:tensorflow:Using a while_loop for converting StatelessRandomUniformV2
+WARNING:tensorflow:Using a while_loop for converting AdjustContrastv2
+🚀 正在提取 Epoch 8 的 Precision/Recall/F1 分数...
+2026-03-22 12:07:16.675820: I tensorflow/stream_executor/cuda/cuda_dnn.cc:384] Loaded cuDNN version 8100
+2026-03-22 12:07:18.081311: E tensorflow/core/platform/windows/subprocess.cc:287] Call to CreateProcess failed. Error code: 2, command: '"ptxas.exe" "--
+version"'                                                                                                                                               2026-03-22 12:07:18.081956: E tensorflow/core/platform/windows/subprocess.cc:287] Call to CreateProcess failed. Error code: 2, command: '"ptxas.exe" "--
+version"'                                                                                                                                               2026-03-22 12:07:18.082152: W tensorflow/stream_executor/gpu/asm_compiler.cc:80] Couldn't get ptxas version string: INTERNAL: Couldn't invoke ptxas.exe 
+--version                                                                                                                                               2026-03-22 12:07:18.084019: E tensorflow/core/platform/windows/subprocess.cc:287] Call to CreateProcess failed. Error code: 2, command: '"ptxas.exe" "C:
+\Users\Admin\AppData\Local\Temp\/tempfile-DESKTOP-T7A9ARN-31d8-12812-64d950dd96aa3" "-o" "C:\Users\Admin\AppData\Local\Temp\/tempfile-DESKTOP-T7A9ARN-31d8-12812-64d950dd970c3" "-arch=sm_86" "--warn-on-spills"'                                                                                               2026-03-22 12:07:18.084341: W tensorflow/stream_executor/gpu/redzone_allocator.cc:314] INTERNAL: Failed to launch ptxas
+Relying on driver to perform ptx compilation.
+Modify $PATH to customize ptxas location.
+This message will be only logged once.
+2026-03-22 12:07:19.513702: I tensorflow/stream_executor/cuda/cuda_blas.cc:1786] TensorFloat-32 will be used for the matrix multiplication. This will on
+ly be logged once.                                                                                                                                      
+==================================================
+📊 SE-ResNet50V2 最佳状态 (Epoch 8) 论文数据：
+==================================================
+              precision    recall  f1-score   support
+
+    Negative     0.8475    0.9184    0.8815     16399
+    Positive     0.9108    0.8344    0.8709     16369
+
+    accuracy                         0.8765     32768
+   macro avg     0.8791    0.8764    0.8762     32768
+weighted avg     0.8791    0.8765    0.8762     32768
+
+==================================================

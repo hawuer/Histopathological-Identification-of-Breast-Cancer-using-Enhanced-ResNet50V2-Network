@@ -1,0 +1,190 @@
+(med_vision) PS E:\Workspace\Medical Image Classification Model Based on SE-ResNet50V2 Attention Mechanism> python tools/run_se_resnet_v2.py
+✅ 实验环境准备就绪 (Float32 + 显存按需增长)
+⏳ 正在创建 PCam 数据流...
+2026-03-20 11:45:07.068436: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Lib
+rary (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX AVX2                                                       To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2026-03-20 11:45:07.574822: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1532] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 95
+97 MB memory:  -> device: 0, name: NVIDIA GeForce RTX 3060, pci bus id: 0000:01:00.0, compute capability: 8.6                                           🚀 正在加载 SE-ResNet50V2 模型...
+WARNING:tensorflow:Using a while_loop for converting RngReadAndSkip
+WARNING:tensorflow:Using a while_loop for converting Bitcast
+WARNING:tensorflow:Using a while_loop for converting Bitcast
+WARNING:tensorflow:Using a while_loop for converting StatelessRandomUniformFullIntV2
+WARNING:tensorflow:Using a while_loop for converting StatelessRandomGetKeyCounter
+WARNING:tensorflow:Using a while_loop for converting StatelessRandomUniformV2
+WARNING:tensorflow:Using a while_loop for converting AdjustContrastv2
+🔥 开始训练...
+Epoch 1/30
+WARNING:tensorflow:Using a while_loop for converting RngReadAndSkip
+WARNING:tensorflow:Using a while_loop for converting Bitcast
+WARNING:tensorflow:Using a while_loop for converting Bitcast
+WARNING:tensorflow:Using a while_loop for converting StatelessRandomUniformFullIntV2
+WARNING:tensorflow:Using a while_loop for converting StatelessRandomGetKeyCounter
+WARNING:tensorflow:Using a while_loop for converting StatelessRandomUniformV2
+WARNING:tensorflow:Using a while_loop for converting AdjustContrastv2
+WARNING:tensorflow:Using a while_loop for converting RngReadAndSkip
+WARNING:tensorflow:Using a while_loop for converting Bitcast
+WARNING:tensorflow:Using a while_loop for converting Bitcast
+WARNING:tensorflow:Using a while_loop for converting StatelessRandomUniformFullIntV2
+WARNING:tensorflow:Using a while_loop for converting StatelessRandomGetKeyCounter
+WARNING:tensorflow:Using a while_loop for converting StatelessRandomUniformV2
+WARNING:tensorflow:Using a while_loop for converting AdjustContrastv2
+2026-03-20 11:45:17.791951: I tensorflow/stream_executor/cuda/cuda_dnn.cc:384] Loaded cuDNN version 8100
+2026-03-20 11:45:18.660451: E tensorflow/core/platform/windows/subprocess.cc:287] Call to CreateProcess failed. Error code: 2, command: '"ptxas.exe" "--
+version"'                                                                                                                                               2026-03-20 11:45:18.660895: E tensorflow/core/platform/windows/subprocess.cc:287] Call to CreateProcess failed. Error code: 2, command: '"ptxas.exe" "--
+version"'                                                                                                                                               2026-03-20 11:45:18.660958: W tensorflow/stream_executor/gpu/asm_compiler.cc:80] Couldn't get ptxas version string: INTERNAL: Couldn't invoke ptxas.exe 
+--version                                                                                                                                               2026-03-20 11:45:18.671048: E tensorflow/core/platform/windows/subprocess.cc:287] Call to CreateProcess failed. Error code: 2, command: '"ptxas.exe" "C:
+\Users\Admin\AppData\Local\Temp\/tempfile-DESKTOP-T7A9ARN-233c-12064-64d6c8385e592" "-o" "C:\Users\Admin\AppData\Local\Temp\/tempfile-DESKTOP-T7A9ARN-233c-12064-64d6c83860bb6" "-arch=sm_86" "--warn-on-spills"'                                                                                               2026-03-20 11:45:18.671254: W tensorflow/stream_executor/gpu/redzone_allocator.cc:314] INTERNAL: Failed to launch ptxas
+Relying on driver to perform ptx compilation.
+Modify $PATH to customize ptxas location.
+This message will be only logged once.
+2026-03-20 11:45:19.922160: I tensorflow/stream_executor/cuda/cuda_blas.cc:1786] TensorFloat-32 will be used for the matrix multiplication. This will on
+ly be logged once.                                                                                                                                      8192/8192 [==============================] - ETA: 0s - loss: 0.2883 - acc: 0.8806      
+Epoch 1: val_acc improved from -inf to 0.68402, saving model to E:\Workspace\Medical Image Classification Model Based on SE-ResNet50V2 Attention Mechani
+sm\checkpoints\se_resnet50v2_stable_final\best_se_v2_model.h5                                                                                           8192/8192 [==============================] - 1558s 189ms/step - loss: 0.2883 - acc: 0.8806 - val_loss: 0.6772 - val_acc: 0.6840 - lr: 5.0000e-05
+Epoch 2/30
+8192/8192 [==============================] - ETA: 0s - loss: 0.2040 - acc: 0.9209   
+Epoch 2: val_acc did not improve from 0.68402
+8192/8192 [==============================] - 1538s 188ms/step - loss: 0.2040 - acc: 0.9209 - val_loss: 0.9094 - val_acc: 0.6575 - lr: 5.0000e-05        
+Epoch 3/30
+8192/8192 [==============================] - ETA: 0s - loss: 0.1742 - acc: 0.9330   
+Epoch 3: val_acc improved from 0.68402 to 0.79016, saving model to E:\Workspace\Medical Image Classification Model Based on SE-ResNet50V2 Attention Mech
+anism\checkpoints\se_resnet50v2_stable_final\best_se_v2_model.h5                                                                                        8192/8192 [==============================] - 1538s 188ms/step - loss: 0.1742 - acc: 0.9330 - val_loss: 0.4699 - val_acc: 0.7902 - lr: 5.0000e-05
+Epoch 4/30
+8192/8192 [==============================] - ETA: 0s - loss: 0.1523 - acc: 0.9411   
+Epoch 4: val_acc did not improve from 0.79016
+8192/8192 [==============================] - 1549s 189ms/step - loss: 0.1523 - acc: 0.9411 - val_loss: 0.6285 - val_acc: 0.7374 - lr: 5.0000e-05        
+Epoch 5/30
+8192/8192 [==============================] - ETA: 0s - loss: 0.1368 - acc: 0.9476   
+Epoch 5: val_acc improved from 0.79016 to 0.81839, saving model to E:\Workspace\Medical Image Classification Model Based on SE-ResNet50V2 Attention Mech
+anism\checkpoints\se_resnet50v2_stable_final\best_se_v2_model.h5                                                                                        8192/8192 [==============================] - 1551s 189ms/step - loss: 0.1368 - acc: 0.9476 - val_loss: 0.4104 - val_acc: 0.8184 - lr: 5.0000e-05
+Epoch 6/30
+8192/8192 [==============================] - ETA: 0s - loss: 0.1235 - acc: 0.9528   
+Epoch 6: val_acc improved from 0.81839 to 0.86356, saving model to E:\Workspace\Medical Image Classification Model Based on SE-ResNet50V2 Attention Mech
+anism\checkpoints\se_resnet50v2_stable_final\best_se_v2_model.h5                                                                                        8192/8192 [==============================] - 1557s 190ms/step - loss: 0.1235 - acc: 0.9528 - val_loss: 0.3355 - val_acc: 0.8636 - lr: 5.0000e-05
+Epoch 7/30
+8192/8192 [==============================] - ETA: 0s - loss: 0.1139 - acc: 0.9569   
+Epoch 7: val_acc did not improve from 0.86356
+8192/8192 [==============================] - 1535s 187ms/step - loss: 0.1139 - acc: 0.9569 - val_loss: 0.4832 - val_acc: 0.7965 - lr: 5.0000e-05        
+Epoch 8/30
+8192/8192 [==============================] - ETA: 0s - loss: 0.1067 - acc: 0.9599   
+Epoch 8: val_acc improved from 0.86356 to 0.87646, saving model to E:\Workspace\Medical Image Classification Model Based on SE-ResNet50V2 Attention Mech
+anism\checkpoints\se_resnet50v2_stable_final\best_se_v2_model.h5                                                                                        8192/8192 [==============================] - 1554s 190ms/step - loss: 0.1067 - acc: 0.9599 - val_loss: 0.3140 - val_acc: 0.8765 - lr: 5.0000e-05
+Epoch 9/30
+8192/8192 [==============================] - ETA: 0s - loss: 0.1004 - acc: 0.9620   
+Epoch 9: val_acc did not improve from 0.87646
+8192/8192 [==============================] - 1554s 190ms/step - loss: 0.1004 - acc: 0.9620 - val_loss: 0.3497 - val_acc: 0.8582 - lr: 5.0000e-05        
+Epoch 10/30
+8192/8192 [==============================] - ETA: 0s - loss: 0.0954 - acc: 0.9639   
+Epoch 10: val_acc did not improve from 0.87646
+8192/8192 [==============================] - 1555s 190ms/step - loss: 0.0954 - acc: 0.9639 - val_loss: 0.5262 - val_acc: 0.8085 - lr: 5.0000e-05        
+Epoch 11/30
+8192/8192 [==============================] - ETA: 0s - loss: 0.0893 - acc: 0.9659   
+Epoch 11: val_acc did not improve from 0.87646
+
+Epoch 11: ReduceLROnPlateau reducing learning rate to 2.499999936844688e-05.
+8192/8192 [==============================] - 1555s 190ms/step - loss: 0.0893 - acc: 0.9659 - val_loss: 0.5127 - val_acc: 0.8188 - lr: 5.0000e-05        
+Epoch 12/30
+8192/8192 [==============================] - ETA: 0s - loss: 0.0750 - acc: 0.9716   
+Epoch 12: val_acc did not improve from 0.87646
+8192/8192 [==============================] - 1555s 190ms/step - loss: 0.0750 - acc: 0.9716 - val_loss: 0.5612 - val_acc: 0.8019 - lr: 2.5000e-05        
+Epoch 13/30
+8192/8192 [==============================] - ETA: 0s - loss: 0.0715 - acc: 0.9730   
+Epoch 13: val_acc did not improve from 0.87646
+8192/8192 [==============================] - 1555s 190ms/step - loss: 0.0715 - acc: 0.9730 - val_loss: 0.5655 - val_acc: 0.8279 - lr: 2.5000e-05        
+Epoch 14/30
+8192/8192 [==============================] - ETA: 0s - loss: 0.0687 - acc: 0.9740   
+Epoch 14: val_acc did not improve from 0.87646
+
+Epoch 14: ReduceLROnPlateau reducing learning rate to 1.249999968422344e-05.
+8192/8192 [==============================] - 1555s 190ms/step - loss: 0.0687 - acc: 0.9740 - val_loss: 0.5951 - val_acc: 0.8159 - lr: 2.5000e-05        
+Epoch 15/30
+8192/8192 [==============================] - ETA: 0s - loss: 0.0608 - acc: 0.9772   
+Epoch 15: val_acc did not improve from 0.87646
+8192/8192 [==============================] - 1541s 188ms/step - loss: 0.0608 - acc: 0.9772 - val_loss: 0.7328 - val_acc: 0.7811 - lr: 1.2500e-05        
+Epoch 16/30
+8192/8192 [==============================] - ETA: 0s - loss: 0.0589 - acc: 0.9780   
+Epoch 16: val_acc did not improve from 0.87646
+8192/8192 [==============================] - 1556s 190ms/step - loss: 0.0589 - acc: 0.9780 - val_loss: 0.7316 - val_acc: 0.7874 - lr: 1.2500e-05        
+Epoch 17/30
+8192/8192 [==============================] - ETA: 0s - loss: 0.0571 - acc: 0.9783   
+Epoch 17: val_acc did not improve from 0.87646
+
+Epoch 17: ReduceLROnPlateau reducing learning rate to 6.24999984211172e-06.
+8192/8192 [==============================] - 1560s 190ms/step - loss: 0.0571 - acc: 0.9783 - val_loss: 0.6467 - val_acc: 0.7992 - lr: 1.2500e-05        
+Epoch 18/30
+8192/8192 [==============================] - ETA: 0s - loss: 0.0519 - acc: 0.9805   
+Epoch 18: val_acc did not improve from 0.87646
+8192/8192 [==============================] - 1569s 192ms/step - loss: 0.0519 - acc: 0.9805 - val_loss: 0.6463 - val_acc: 0.8019 - lr: 6.2500e-06        
+Epoch 19/30
+8192/8192 [==============================] - ETA: 0s - loss: 0.0510 - acc: 0.9806   
+Epoch 19: val_acc did not improve from 0.87646
+8192/8192 [==============================] - 1570s 192ms/step - loss: 0.0510 - acc: 0.9806 - val_loss: 0.6457 - val_acc: 0.8042 - lr: 6.2500e-06        
+Epoch 20/30
+8192/8192 [==============================] - ETA: 0s - loss: 0.0501 - acc: 0.9812   
+Epoch 20: val_acc did not improve from 0.87646
+
+Epoch 20: ReduceLROnPlateau reducing learning rate to 3.12499992105586e-06.
+8192/8192 [==============================] - 1569s 192ms/step - loss: 0.0501 - acc: 0.9812 - val_loss: 0.7324 - val_acc: 0.7898 - lr: 6.2500e-06        
+Epoch 21/30
+8192/8192 [==============================] - ETA: 0s - loss: 0.0481 - acc: 0.9819   
+Epoch 21: val_acc did not improve from 0.87646
+8192/8192 [==============================] - 1569s 192ms/step - loss: 0.0481 - acc: 0.9819 - val_loss: 0.6808 - val_acc: 0.7957 - lr: 3.1250e-06        
+Epoch 22/30
+8192/8192 [==============================] - ETA: 0s - loss: 0.0474 - acc: 0.9820   
+Epoch 22: val_acc did not improve from 0.87646
+8192/8192 [==============================] - 1580s 193ms/step - loss: 0.0474 - acc: 0.9820 - val_loss: 0.8148 - val_acc: 0.7732 - lr: 3.1250e-06        
+Epoch 23/30
+8192/8192 [==============================] - ETA: 0s - loss: 0.0463 - acc: 0.9825   
+Epoch 23: val_acc did not improve from 0.87646
+
+Epoch 23: ReduceLROnPlateau reducing learning rate to 1.56249996052793e-06.
+8192/8192 [==============================] - 1578s 193ms/step - loss: 0.0463 - acc: 0.9825 - val_loss: 0.6780 - val_acc: 0.7986 - lr: 3.1250e-06        
+Epoch 24/30
+8192/8192 [==============================] - ETA: 0s - loss: 0.0453 - acc: 0.9829   
+Epoch 24: val_acc did not improve from 0.87646
+8192/8192 [==============================] - 1581s 193ms/step - loss: 0.0453 - acc: 0.9829 - val_loss: 0.6979 - val_acc: 0.7878 - lr: 1.5625e-06        
+Epoch 25/30
+8192/8192 [==============================] - ETA: 0s - loss: 0.0454 - acc: 0.9829   
+Epoch 25: val_acc did not improve from 0.87646
+8192/8192 [==============================] - 1579s 193ms/step - loss: 0.0454 - acc: 0.9829 - val_loss: 0.7030 - val_acc: 0.7896 - lr: 1.5625e-06        
+Epoch 26/30
+8192/8192 [==============================] - ETA: 0s - loss: 0.0449 - acc: 0.9829   
+Epoch 26: val_acc did not improve from 0.87646
+
+Epoch 26: ReduceLROnPlateau reducing learning rate to 7.81249980263965e-07.
+8192/8192 [==============================] - 1579s 193ms/step - loss: 0.0449 - acc: 0.9829 - val_loss: 0.7232 - val_acc: 0.7859 - lr: 1.5625e-06        
+Epoch 27/30
+8192/8192 [==============================] - ETA: 0s - loss: 0.0446 - acc: 0.9830   
+Epoch 27: val_acc did not improve from 0.87646
+8192/8192 [==============================] - 1557s 190ms/step - loss: 0.0446 - acc: 0.9830 - val_loss: 0.7525 - val_acc: 0.7829 - lr: 7.8125e-07        
+Epoch 28/30
+8192/8192 [==============================] - ETA: 0s - loss: 0.0439 - acc: 0.9834   
+Epoch 28: val_acc did not improve from 0.87646
+8192/8192 [==============================] - 1572s 192ms/step - loss: 0.0439 - acc: 0.9834 - val_loss: 0.7218 - val_acc: 0.7862 - lr: 7.8125e-07        
+Epoch 29/30
+8192/8192 [==============================] - ETA: 0s - loss: 0.0441 - acc: 0.9832   
+Epoch 29: val_acc did not improve from 0.87646
+
+Epoch 29: ReduceLROnPlateau reducing learning rate to 3.906249901319825e-07.
+8192/8192 [==============================] - 1576s 192ms/step - loss: 0.0441 - acc: 0.9832 - val_loss: 0.7338 - val_acc: 0.7852 - lr: 7.8125e-07        
+Epoch 30/30
+8192/8192 [==============================] - ETA: 0s - loss: 0.0440 - acc: 0.9836   
+Epoch 30: val_acc did not improve from 0.87646
+8192/8192 [==============================] - 1581s 193ms/step - loss: 0.0440 - acc: 0.9836 - val_loss: 0.6871 - val_acc: 0.7936 - lr: 3.9062e-07        
+
+📊 正在保存训练曲线图...
+✅ 训练曲线已保存: F:\复现图像生成\se_v2_final_training_plot.png
+⏳ 正在执行流式评估以生成分类报告...
+
+📋 最终评估报告 (Validation Set):
+              precision    recall  f1-score   support
+
+    Negative       0.72      0.97      0.82     16399
+    Positive       0.95      0.62      0.75     16369
+
+    accuracy                           0.79     32768
+   macro avg       0.83      0.79      0.79     32768
+weighted avg       0.83      0.79      0.79     32768
+
+✅ 所有任务已完成！最佳模型保存在: E:\Workspace\Medical Image Classification Model Based on SE-ResNet50V2 Attention Mechanism\checkpoints\se_resnet50v2_
+stable_final                                                                                                                                            

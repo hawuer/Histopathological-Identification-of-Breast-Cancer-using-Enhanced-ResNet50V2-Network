@@ -1,0 +1,73 @@
+(med_vision) PS E:\Workspace\Medical Image Classification Model Based on SE-ResNet50V2 Attention Mechanism> python tools/run_resnet.py
+2026-03-22 21:46:37.432119: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (one
+DNN) to use the following CPU instructions in performance-critical operations:  AVX AVX2                                                                         To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2026-03-22 21:46:37.919464: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1532] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 9597 MB mem
+ory:  -> device: 0, name: NVIDIA GeForce RTX 3060, pci bus id: 0000:01:00.0, compute capability: 8.6                                                             🚀 启动 V1 随机初始化基准实验 (策略 B+C)...
+🔥 训练启动！若模型已收敛且 Loss 连续 5 轮不降，程序将自动停止...
+Epoch 1/30
+2026-03-22 21:46:44.173334: I tensorflow/stream_executor/cuda/cuda_dnn.cc:384] Loaded cuDNN version 8100
+2026-03-22 21:46:44.924371: E tensorflow/core/platform/windows/subprocess.cc:287] Call to CreateProcess failed. Error code: 2, command: '"ptxas.exe" "--version"'
+2026-03-22 21:46:44.924735: E tensorflow/core/platform/windows/subprocess.cc:287] Call to CreateProcess failed. Error code: 2, command: '"ptxas.exe" "--version"'
+2026-03-22 21:46:44.924788: W tensorflow/stream_executor/gpu/asm_compiler.cc:80] Couldn't get ptxas version string: INTERNAL: Couldn't invoke ptxas.exe --version
+2026-03-22 21:46:44.934699: E tensorflow/core/platform/windows/subprocess.cc:287] Call to CreateProcess failed. Error code: 2, command: '"ptxas.exe" "C:\Users\Ad
+min\AppData\Local\Temp\/tempfile-DESKTOP-T7A9ARN-3734-14664-64d9d261d559e" "-o" "C:\Users\Admin\AppData\Local\Temp\/tempfile-DESKTOP-T7A9ARN-3734-14664-64d9d261d7ade" "-arch=sm_86" "--warn-on-spills"'                                                                                                                          2026-03-22 21:46:44.934983: W tensorflow/stream_executor/gpu/redzone_allocator.cc:314] INTERNAL: Failed to launch ptxas
+Relying on driver to perform ptx compilation.
+Modify $PATH to customize ptxas location.
+This message will be only logged once.
+2026-03-22 21:46:46.586796: I tensorflow/stream_executor/cuda/cuda_blas.cc:1786] TensorFloat-32 will be used for the matrix multiplication. This will only be log
+ged once.                                                                                                                                                        8192/8192 [==============================] - ETA: 0s - loss: 0.4168 - acc: 0.7984      
+Epoch 1: val_acc improved from -inf to 0.76749, saving model to E:\Workspace\Medical Image Classification Model Based on SE-ResNet50V2 Attention Mechanism\checkp
+oints\resnet50_v1_low_benchmark\best_low_benchmark_v1.h5                                                                                                         8192/8192 [==============================] - 507s 61ms/step - loss: 0.4168 - acc: 0.7984 - val_loss: 0.5805 - val_acc: 0.7675 - lr: 1.0000e-04
+Epoch 2/30
+8192/8192 [==============================] - ETA: 0s - loss: 0.2608 - acc: 0.9054  
+Epoch 2: val_acc improved from 0.76749 to 0.77203, saving model to E:\Workspace\Medical Image Classification Model Based on SE-ResNet50V2 Attention Mechanism\che
+ckpoints\resnet50_v1_low_benchmark\best_low_benchmark_v1.h5                                                                                                      8192/8192 [==============================] - 503s 61ms/step - loss: 0.2608 - acc: 0.9054 - val_loss: 0.5822 - val_acc: 0.7720 - lr: 1.0000e-04
+Epoch 3/30
+8192/8192 [==============================] - ETA: 0s - loss: 0.1929 - acc: 0.9316  
+Epoch 3: val_acc improved from 0.77203 to 0.79410, saving model to E:\Workspace\Medical Image Classification Model Based on SE-ResNet50V2 Attention Mechanism\che
+ckpoints\resnet50_v1_low_benchmark\best_low_benchmark_v1.h5                                                                                                      8192/8192 [==============================] - 503s 61ms/step - loss: 0.1929 - acc: 0.9316 - val_loss: 0.6133 - val_acc: 0.7941 - lr: 1.0000e-04
+Epoch 4/30
+8192/8192 [==============================] - ETA: 0s - loss: 0.1561 - acc: 0.9449  
+Epoch 4: val_acc did not improve from 0.79410
+8192/8192 [==============================] - 503s 61ms/step - loss: 0.1561 - acc: 0.9449 - val_loss: 0.5506 - val_acc: 0.7924 - lr: 1.0000e-04
+Epoch 5/30
+8192/8192 [==============================] - ETA: 0s - loss: 0.1303 - acc: 0.9546  
+Epoch 5: val_acc did not improve from 0.79410
+8192/8192 [==============================] - 503s 61ms/step - loss: 0.1303 - acc: 0.9546 - val_loss: 1.1835 - val_acc: 0.7185 - lr: 1.0000e-04
+Epoch 6/30
+8192/8192 [==============================] - ETA: 0s - loss: 0.1114 - acc: 0.9607  
+Epoch 6: val_acc did not improve from 0.79410
+8192/8192 [==============================] - 503s 61ms/step - loss: 0.1114 - acc: 0.9607 - val_loss: 0.8432 - val_acc: 0.7531 - lr: 1.0000e-04
+Epoch 7/30
+8192/8192 [==============================] - ETA: 0s - loss: 0.0956 - acc: 0.9666  
+Epoch 7: val_acc did not improve from 0.79410
+
+Epoch 7: ReduceLROnPlateau reducing learning rate to 4.999999873689376e-05.
+8192/8192 [==============================] - 503s 61ms/step - loss: 0.0956 - acc: 0.9666 - val_loss: 2.2697 - val_acc: 0.6405 - lr: 1.0000e-04
+Epoch 8/30
+8192/8192 [==============================] - ETA: 0s - loss: 0.0631 - acc: 0.9789  
+Epoch 8: val_acc improved from 0.79410 to 0.81174, saving model to E:\Workspace\Medical Image Classification Model Based on SE-ResNet50V2 Attention Mechanism\che
+ckpoints\resnet50_v1_low_benchmark\best_low_benchmark_v1.h5                                                                                                      8192/8192 [==============================] - 503s 61ms/step - loss: 0.0631 - acc: 0.9789 - val_loss: 0.6440 - val_acc: 0.8117 - lr: 5.0000e-05
+Epoch 9/30
+8192/8192 [==============================] - ETA: 0s - loss: 0.0445 - acc: 0.9858  
+Epoch 9: val_acc improved from 0.81174 to 0.81802, saving model to E:\Workspace\Medical Image Classification Model Based on SE-ResNet50V2 Attention Mechanism\che
+ckpoints\resnet50_v1_low_benchmark\best_low_benchmark_v1.h5                                                                                                      Restoring model weights from the end of the best epoch: 4.
+8192/8192 [==============================] - 504s 61ms/step - loss: 0.0445 - acc: 0.9858 - val_loss: 0.9062 - val_acc: 0.8180 - lr: 5.0000e-05
+Epoch 9: early stopping
+
+============================================================
+📊 训练已自动停止，正在生成最佳状态的图像化报告...
+============================================================
+
+📋 分类报告 (Classification Report):
+              precision    recall  f1-score   support
+
+    Negative     0.8132    0.8262    0.8196     16399
+    Positive     0.8230    0.8098    0.8164     16369
+
+    accuracy                         0.8180     32768
+   macro avg     0.8181    0.8180    0.8180     32768
+weighted avg     0.8181    0.8180    0.8180     32768
+
+✅ 混淆矩阵热力图已自动保存至: E:\Workspace\Medical Image Classification Model Based on SE-ResNet50V2 Attention Mechanism\checkpoints\resnet50_v1_low_benchmark\v
+1_baseline_confusion_matrix.png                                                                                                                                  
